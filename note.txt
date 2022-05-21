@@ -1,0 +1,4 @@
+To init gradle project for the first time:
+run: gradle init.
+for the options asked questions, choose the default values (press Enter)
+choose groovy for the build script

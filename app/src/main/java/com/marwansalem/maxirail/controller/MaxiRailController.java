@@ -1,12 +1,25 @@
 package com.marwansalem.maxirail.controller;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.marwansalem.maxirail.model.TrainTime;
+import com.marwansalem.maxirail.service.TrainTimeService;
+
 @RestController
 public class MaxiRailController {
-    @GetMapping(path = "/")
-    public String getTimes() {
-        return "No train times available right now :<";
+    private final TrainTimeService trainTimeService;
+
+    public MaxiRailController(TrainTimeService trainTimeService) {
+        this.trainTimeService = trainTimeService;
     }
+
+    @GetMapping(path = "/")
+    public List<TrainTime> getTimes() {
+        return trainTimeService.getTrainTimes();
+    }
+
+
 }
