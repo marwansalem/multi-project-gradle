@@ -1,0 +1,5 @@
+to create subproject and link in intellij:
+1. adding subproject path in root project settings.gradle
+2. run reload gradle changes CMD + SHIFT + I]
+3. create directory in new subproject path: src/main/java
+4. ***IMPORTANT run reload gradle project [CMD + SHIFT + I]

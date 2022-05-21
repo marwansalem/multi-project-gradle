@@ -8,4 +8,9 @@
  */
 
 rootProject.name = 'gradle-multi-project-master-class'
+
+// subprojects
+// naming convention is kebab-case : like name1-name2
 include 'app'
+include 'model'
+include 'service'
