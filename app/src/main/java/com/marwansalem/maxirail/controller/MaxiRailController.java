@@ -21,5 +21,9 @@ public class MaxiRailController {
         return trainTimeService.getTrainTimes();
     }
 
+    @GetMapping(path = "/")
+    public TrainTime getFirstTrainTime() {
+        return trainTimeService.getTrainTimes().get(0);
+    }
 
 }
