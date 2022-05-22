@@ -7,6 +7,7 @@ repositories {
 }
 
 dependencies {
+    //api vs implementation https://stackoverflow.com/questions/44413952/gradle-implementation-vs-api-configuration
     api(project(":model"))
     implementation("org.springframework.boot:spring-boot-starter:2.6.4")
 }
