@@ -16,9 +16,14 @@ public class AssertUtils {
         Assert.assertEquals(expected, actual);
     }
 
+    public static void assertEquals(String expected, String actual) {
+        Assert.assertEquals(expected, actual);
+    }
+
     public static void assertNotEquals(int unexpected, int actual) {
         Assert.assertNotEquals(unexpected, actual);
     }
+
 
     public static void assertNotNull(Object object) {
         Assert.assertNotNull(object);

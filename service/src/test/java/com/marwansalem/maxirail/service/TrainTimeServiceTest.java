@@ -17,4 +17,11 @@ public class TrainTimeServiceTest {
         AssertUtils.assertNotNull(trainTimes);
         AssertUtils.assertFalse("TrainTimes list is empty", trainTimes.isEmpty());
     }
+
+    @Test
+    public void givenTenShouldReturnOneToTen(){
+        TrainTimeService trainTimeService = new TrainTimeService();
+        int n = 10;
+        AssertUtils.assertEquals("12345678910", trainTimeService.getFirstNNumbers(n));
+    }
 }
