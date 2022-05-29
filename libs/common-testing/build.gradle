@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+}
+
+sourceCompatibility = '1.11'
+targetCompatibility = '1.11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    api 'junit:junit:4.12'
+}
