@@ -12,10 +12,10 @@ import com.marwansalem.maxirail.model.TrainTime;
 public class TrainTimeService {
      public List<TrainTime> getTrainTimes() {
         return Arrays.asList(
-            new TrainTime("Alexandria:Sidi Gaber", "Cairo:Ramsis", LocalTime.of(10, 30), LocalTime.of(12, 30)),
-            new TrainTime("Alexandria:Sidi Gaber", "Cairo:Ramsis", LocalTime.of(15, 0), LocalTime.of(17,00)),
-            new TrainTime("Cairo:Ramsis", "Alexandria:Sidi Gaber", LocalTime.of(1, 0), LocalTime.of(3, 0)),
-            new TrainTime("Cairo:Ramsis", "Alexandria:Sidi Gaber", LocalTime.of(17, 0), LocalTime.of(19, 0))
+            new TrainTime("1", "Alexandria:Sidi Gaber", "Cairo:Ramsis", LocalTime.of(10, 30), LocalTime.of(12, 30)),
+            new TrainTime("2", "Alexandria:Sidi Gaber", "Cairo:Ramsis", LocalTime.of(15, 0), LocalTime.of(17,00)),
+            new TrainTime("3", "Cairo:Ramsis", "Alexandria:Sidi Gaber", LocalTime.of(1, 0), LocalTime.of(3, 0)),
+            new TrainTime("4", "Cairo:Ramsis", "Alexandria:Sidi Gaber", LocalTime.of(17, 0), LocalTime.of(19, 0))
         );
     }
 }
