@@ -16,3 +16,5 @@ include 'model'
 include 'service'
 include 'common'
 project(':common').projectDir = new File(settingsDir, 'libs/common')
+include 'common-testing'
+project(':common-testing').projectDir = new File(settingsDir, 'libs/common-testing')

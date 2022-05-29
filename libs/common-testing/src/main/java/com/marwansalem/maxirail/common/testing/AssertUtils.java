@@ -19,4 +19,8 @@ public class AssertUtils {
     public static void assertNotEquals(int unexpected, int actual) {
         Assert.assertNotEquals(unexpected, actual);
     }
+
+    public static void assertNotNull(Object object) {
+        Assert.assertNotNull(object);
+    }
 }
