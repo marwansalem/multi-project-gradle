@@ -14,3 +14,5 @@ rootProject.name = 'gradle-multi-project-master-class'
 include 'app'
 include 'model'
 include 'service'
+include 'common'
+project(':common').projectDir = new File(settingsDir, 'libs/common')
